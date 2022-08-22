@@ -13,7 +13,7 @@
 <body>
 <h1>Product details</h1>
 <p>
-    <a href="/products">Back to customer list</a>
+    <a href="/product">Back to customer list</a>
 </p>
 <table>
     <tr>

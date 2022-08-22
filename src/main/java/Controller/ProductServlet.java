@@ -25,20 +25,20 @@ public class ProductServlet extends HttpServlet {
         }
         switch (action){
             case "create":
-                createCustomer(request, response);
+                createProduct(request, response);
                 break;
             case "edit":
-                updateCustomer(request, response);
+                updateProduct(request, response);
                 break;
             case "delete":
-                deleteCustomer(request, response);
+                deleteProduct(request, response);
                 break;
             default:
                 break;
         }
     }
 
-    private void deleteCustomer(HttpServletRequest request, HttpServletResponse response) {
+    private void deleteProduct(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         Product product = this.productService.findById(id);
         RequestDispatcher dispatcher;
@@ -54,7 +54,24 @@ public class ProductServlet extends HttpServlet {
         }
     }
 
-    private void createCustomer(HttpServletRequest request, HttpServletResponse response) {
+    private void createProduct(HttpServletRequest request, HttpServletResponse response) {
+        String name = request.getParameter("name");
+        int productprice =Integer.parseInt( request.getParameter("productprice"));
+        String describe = request.getParameter("describe");
+        String producer = request.getParameter("producer");
+        int id = (int)(Math.random() * 10000);
+
+        Product product = new Product(id, name, productprice, describe,producer);
+        this.productService.save(product);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("product/create.jsp");
+        request.setAttribute("message", "New product was created");
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void listProduct(HttpServletRequest request, HttpServletResponse response) throws IOException,ServletException{
@@ -80,7 +97,7 @@ public class ProductServlet extends HttpServlet {
                 showDeleteForm(request, response);
                 break;
             case "view":
-                viewCustomer(request, response);
+                viewProduct(request, response);
                 break;
             default:
                 listProduct(request, response);
@@ -88,7 +105,7 @@ public class ProductServlet extends HttpServlet {
         }
     }
 
-    private void viewCustomer(HttpServletRequest request, HttpServletResponse response) {
+    private void viewProduct(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         Product product = this.productService.findById(id);
         RequestDispatcher dispatcher;
@@ -114,8 +131,8 @@ public class ProductServlet extends HttpServlet {
         if(product == null){
             dispatcher = request.getRequestDispatcher("error-404.jsp");
         } else {
-            request.setAttribute("customer", product);
-            dispatcher = request.getRequestDispatcher("customer/delete.jsp");
+            request.setAttribute("product", product);
+            dispatcher = request.getRequestDispatcher("product/delete.jsp");
         }
         try {
             dispatcher.forward(request, response);
@@ -145,7 +162,7 @@ public class ProductServlet extends HttpServlet {
         }
     }
 
-    private void updateCustomer(HttpServletRequest request, HttpServletResponse response) {
+    private void updateProduct(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
         int productprice  = Integer.parseInt(request.getParameter("productprice"));

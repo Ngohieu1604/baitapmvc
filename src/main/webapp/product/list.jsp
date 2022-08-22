@@ -14,7 +14,7 @@
 <body>
     <h1>Product</h1>
     <p>
-        <a href="/products?action=create">Create new product</a>
+        <a href="/product?action=create">Create new product</a>
     </p>
 <table border="1">
     <tr>
