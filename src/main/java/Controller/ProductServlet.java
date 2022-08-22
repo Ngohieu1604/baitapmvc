@@ -46,11 +46,14 @@ public class ProductServlet extends HttpServlet {
             dispatcher = request.getRequestDispatcher("error-404.jsp");
         } else {
             this.productService.remove(id);
-            try {
-                response.sendRedirect("/product");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            dispatcher = request.getRequestDispatcher("product/delete.jsp");
+        }
+        try {
+            dispatcher.forward(request,response);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ServletException e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -167,7 +170,7 @@ public class ProductServlet extends HttpServlet {
         String name = request.getParameter("name");
         int productprice  = Integer.parseInt(request.getParameter("productprice"));
         String describe = request.getParameter("describe");
-        String producer=request.getParameter("producer");
+        String producer = request.getParameter("producer");
 
         Product product = this.productService.findById(id);
         RequestDispatcher dispatcher;
@@ -175,7 +178,7 @@ public class ProductServlet extends HttpServlet {
             dispatcher = request.getRequestDispatcher("product/error-404.jsp");
         } else {
             product.setName(name);
-            product.setProductprice(productprice);
+            product.setProductPrice(productprice);
             product.setDescribe(describe);
             product.setProducer(producer);
             this.productService.update(id, product);

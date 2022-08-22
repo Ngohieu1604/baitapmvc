@@ -3,17 +3,17 @@ package model;
 public class Product {
     private int id;
     private String name;
-    private int productprice;
+    private int productPrice;
     private String describe;
     private String producer;
 
     public Product() {
     }
 
-    public Product(int id, String name, int productprice, String describe, String producer) {
+    public Product(int id, String name, int productPrice, String describe, String producer) {
         this.id = id;
         this.name = name;
-        this.productprice = productprice;
+        this.productPrice = productPrice;
         this.describe = describe;
         this.producer = producer;
     }
@@ -34,12 +34,12 @@ public class Product {
         this.name = name;
     }
 
-    public int getProductprice() {
-        return productprice;
+    public int getProductPrice() {
+        return productPrice;
     }
 
-    public void setProductprice(int productprice) {
-        this.productprice = productprice;
+    public void setProductPrice(int productPrice) {
+        this.productPrice = productPrice;
     }
 
     public String getDescribe() {
@@ -57,4 +57,6 @@ public class Product {
     public void setProducer(String producer) {
         this.producer = producer;
     }
+
+
 }

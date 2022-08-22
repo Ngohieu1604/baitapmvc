@@ -36,11 +36,11 @@
             </tr>
             <tr>
                 <td>productprice: </td>
-                <td><input type="text" name="price" id="price"></td>
+                <td><input type="text" name="productprice" id="productprice"></td>
             </tr>
             <tr>
                 <td>describe: </td>
-                <td><input type="text" name="describes" id="describe"></td>
+                <td><input type="text" name="describe" id="describe"></td>
             </tr>
             <tr>
                 <td>producer</td>

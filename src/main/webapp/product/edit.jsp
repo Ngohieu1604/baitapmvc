@@ -31,15 +31,15 @@
             </tr>
             <tr>
                 <td> productprice: </td>
-                <td><input type="text" name=" productprice" id=" productprice" value="${requestScope["product"].getProductprice()}"></td>
+                <td><input type="text" name="productprice" id="productprice" value="${requestScope["product"].productprice}"></td>
             </tr>
             <tr>
                 <td>describe: </td>
-                <td><input type="text" name="describe" id="describe" value="${requestScope["product"].getDescribe()}"></td>
+                <td><input type="text" name="describe" id="describe" value="${requestScope["product"].describe}"></td>
             </tr>
             <tr>
                 <td>producer: </td>
-                <td><input type="text" name="producer" id="producer" value="${requestScope["product"].getProducer()}"></td>
+                <td><input type="text" name="producer" id="producer" value="${requestScope["product"].producer}"></td>
             </tr>
             <tr>
                 <td></td>
