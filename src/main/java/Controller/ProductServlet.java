@@ -47,7 +47,7 @@ public class ProductServlet extends HttpServlet {
         } else {
             this.productService.remove(id);
             try {
-                response.sendRedirect("/customers");
+                response.sendRedirect("/product");
             } catch (IOException e) {
                 e.printStackTrace();
             }
