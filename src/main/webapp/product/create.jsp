@@ -35,8 +35,8 @@
                 <td><input type="text" name="name" id="name"></td>
             </tr>
             <tr>
-                <td>productprice: </td>
-                <td><input type="text" name="productprice" id="productprice"></td>
+                <td>productPrice: </td>
+                <td><input type="text" name="productPrice" id="productPrice"></td>
             </tr>
             <tr>
                 <td>describe: </td>

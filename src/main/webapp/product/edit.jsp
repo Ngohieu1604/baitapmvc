@@ -30,8 +30,8 @@
                 <td><input type="text" name="name" id="name" value="${requestScope["product"].getName()}"></td>
             </tr>
             <tr>
-                <td> productprice: </td>
-                <td><input type="text" name="productprice" id="productprice" value="${requestScope["product"].productprice}"></td>
+                <td> productPrice: </td>
+                <td><input type="text" name="productPrice" id="productPrice" value="${requestScope["product"].productPrice}"></td>
             </tr>
             <tr>
                 <td>describe: </td>

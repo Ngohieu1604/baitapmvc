@@ -6,12 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8b9062a6-6b37-41b4-aa86-09122cf6b989" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ProductServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/product/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/detele.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/delete.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/product/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +55,11 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LENOVO/Desktop/Javaweb&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
   <component name="RunManager">
@@ -161,8 +160,9 @@
       <option name="presentableId" value="Default" />
       <updated>1661135620630</updated>
       <workItem from="1661135622003" duration="8299000" />
-      <workItem from="1661150067196" duration="235000" />
-      <workItem from="1661151588894" duration="9399000" />
+      <workItem from="1661219232780" duration="22000" />
+      <workItem from="1661399146027" duration="1198000" />
+      <workItem from="1661402175404" duration="613000" />
     </task>
     <servers />
   </component>
@@ -179,5 +179,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/product/list.jsp</url>
+          <line>30</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
